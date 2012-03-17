@@ -1,0 +1,15 @@
+/*
+ 
+title: iefix css
+author: bylinebreak.com
+last revision: 21.01.10
+ 
+*/
+ 
+/* section: clearfix
+---------------------------------------------- */
+.clearfix {
+	zoom: 1;
+    display: block;
+}
+/* ------------------------------------------- */

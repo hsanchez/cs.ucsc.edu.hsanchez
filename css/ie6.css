@@ -1,0 +1,7 @@
+img, div {
+	behavior: url(js/iepngfix.htc);
+}
+
+#ornament {
+	display: none;
+}
