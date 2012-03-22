@@ -1,0 +1,152 @@
+/**
+ * Supporting styles for my website
+ *
+ * @author Huascar A. Sanchez
+ */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    /*zoom: 1; */
+}
+
+.hidden {
+    display: none;
+}
+
+
+.nav_footer {
+    position: absolute;
+    left: 30px;
+    bottom: 15px;
+}
+.nav_footer li.twitter {
+    width: 50px;
+    height: 36px;
+    float: left;
+    margin: 0 15px 0 0;
+}
+.nav_footer li.twitter a {
+    background: url("../images/icon_twitter.png") no-repeat 0 0;
+    text-indent: -10000px;
+    display: block;
+    height: 100%;
+}
+.nav_footer li.github {
+    width: 50px;
+    height: 36px;
+    float: left;
+    margin: 0 15px 0 0;
+}
+.nav_footer li.github a {
+    background: url("../images/icon_github.png") no-repeat 0 0;
+    text-indent: -10000px;
+    display: block;
+    height: 100%;
+}
+.nav_footer li.mail {
+    width: 150px;
+    height: 36px;
+    float: left;
+    margin: 0 15px 0 0;
+    list-style: none;
+}
+.nav_footer li.mail span {
+    background: url("../images/icon_mail.png") no-repeat 0 0;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    height: 36px;
+    padding: 0 0 0 53px;
+    line-height: 26px;
+    display: block;
+    color: #636263;
+    font-weight: 100;
+    font-size: 90%;
+}
+
+.nav_footer li a:hover, .nav_footer li span:hover {
+    background-position: 0 -36px;
+}
+.nav_footer li a:active, .nav_footer li span:active {
+    background-position: 0 -72px;
+}
+
+.copyright {
+    position: absolute;
+    right: 30px;
+    bottom: 23px;
+    color: #636263;
+    font-weight: 100;
+    font-size: 90%;
+    margin: 0;
+}
+
+.modal_box {
+    width: 320px;
+    bottom: 70px;
+    left: 145px;
+    background: rgb(37, 36, 38);
+    border: 1px solid #373639;
+    padding: 20px 20px 20px 20px;
+    position: absolute;
+    color: #999;
+    font-weight: 100;
+    display: none;
+}
+.modal_box .arrow {
+    width: 26px;
+    height: 9px;
+    background: url("../images/modal_box_arrow.png");
+    position: absolute;
+    bottom: -10px;
+    left: 26px;
+}
+
+input {
+    background: #1c1b1d;
+    color: white;
+    border: 1px solid #252426;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 8px;
+    float: left;
+}
+
+input.error {
+    background: url("../images/form_error.png") no-repeat center right #1c1b1d;
+}
+
+.btn {
+    background: #3c3c3c;
+    color: #33CCFF;
+    font-weight: 700;
+    border-top: 1px solid #474649;
+    cursor: pointer;
+    font-size: 12px;
+    text-shadow: 1px 1px 0 #222;
+}
+.btn:hover {
+    background: #444444;
+}
+.btn:focus, .btn:active {
+    outline: none;
+}
+
+.email {
+    margin: 0 10px 5px 0;
+    width: 170px;
+    padding: 8px 35px 8px 8px ;
+}
+.form_msg {
+    margin: 0 0 10px 0;
+    clear: both;
+    font-size: 90%;
+
+}
