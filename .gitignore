@@ -18,6 +18,7 @@ war/WEB-INF/deploy
 *.o
 *.so
 *.pdf
+.DS_Store
 #*.html
 # ignore dev since each of its subdirectories is a unique git repository.
 #dev/**/*
