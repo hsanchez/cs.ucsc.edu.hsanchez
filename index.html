@@ -1,301 +1,282 @@
-<!doctype html>  
-<html lang="en">
-	
-	<head>
-		<meta charset="utf-8">
-		
-		<title>Did someone say research?</title>
-		
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-		
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/footer.css">
+<!DOCTYPE html>
 
-		<link rel="stylesheet" href="lib/zenburn.css">
+<html xmlns="http://www.w3.org/1999/html" lang="en">
+
+<head>
+    <title>Did someone say research?</title>
+    <meta name="description"
+          content="This is the academic site of Huascar A. Sanchez, a CS graduate student
+          part of SIL at UC Santa Cruz.">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 
 
-        <!--[if IE]>
-        <link href="css/ie.css" type="text/css" rel="stylesheet" title="Internet Explorer" />
-        <![endif]-->
-        <!--[if lt IE 7]>
-        <link href="css/ie6.css" type="text/css" rel="stylesheet" title="Internet Explorer PNG" />
-        <![endif]-->
+    <!--[if IE]>
+    <link href="css/ie.css" type="text/css" rel="stylesheet" title="Internet Explorer" />
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <link href="css/ie6.css" type="text/css" rel="stylesheet" title="Internet Explorer PNG" />
+    <![endif]-->
 
 
-        <!-- begin: subscription to my mailing list -->
-        <!--this is needed to for the mailing list effects-->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
 
-        <script type='text/javascript'>
-            //<![CDATA[
-            $(document).ready(function(){
-                $(".mail span, .duolingo_logo").click(function () {
-                    $("#notify_me").slideToggle(400);
-                });
+    <!-- Add mouse-wheel plugin (this is optional) -->
+    <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.0" type="
+    text/css" media="screen" />
+    <script type="text/javascript"
+            src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.0"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet"
+          href="js/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.3" type="text/css"
+          media="screen" />
+    <script type="text/javascript"
+            src="js/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.3"></script>
+    <script type="text/javascript"
+            src="js/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.3"></script>
+    <link rel="stylesheet"
+          href="js/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.6" type="text/css"
+          media="screen" />
+    <script type="text/javascript"
+            src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.6"></script>
+
+    <!--[if IE]>
+    <link href="css/ie.css" type="text/css" rel="stylesheet" title="Internet Explorer" />
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <link href="css/ie6.css" type="text/css" rel="stylesheet" title="Internet Explorer PNG" />
+    <![endif]-->
+
+    <!-- begin: google analytics code -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-5354996-4']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+    <!-- end: google analytics code -->
+
+
+
+
+    <script type='text/javascript'>
+        //<![CDATA[
+        $(document).ready(function(){
+            $(".mail span").click(function () {
+                $("#notify_me").slideToggle(400);
             });
+        });
 
-            //]]>
-        </script>
-        <!--end: subscription to my mailing list-->
-	</head>
-	
-	<body>
-		
-		<!-- Any section element inside of this container is displayed as a slide -->
-		<div id="main">
-            <section style="text-align: justify">
-                <!--slide 1-->
-                <section>
-                    <h3>Hi there, I'm <span class="gray">Huascar</span> (pronounced wäs-kär), a CS grad
-                        student working with Prof. <span class="gray">Jim Whitehead</span>, and part of
-                        <span class="gray">SIL</span>.</h3>
-                    <p>
-                        My core research area is software engineering, with a focus on
-                        <strong>search-driven software development</strong>, <strong>software
-                        evolution</strong>, and on the <strong>human aspects</strong> of
-                        <strong>software development</strong>. The goal of my research is to
-                        improve <strong>programmer productivity</strong>. To achieve this, I study
-                        the above areas with the aim of <strong>inventing technologies</strong>
-                        that <strong>help people</strong> create, understand, and modify software
-                        rapidly.
-                    </p>
-                    <a href="#/0/1"><p id="triangle-down"></p></a>
-                    <script>
-                        // Delicously hacky. Look away.
-                        if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
-                            document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
-                    </script>
-                </section>
-                <section>
-                    <p>
-                        I am also interested in the development and application of
-                        <strong>computational methods</strong> to address serious social issues in
-                        today's society, such as <strong>bullying</strong> in social networks.
-                    </p>
-                    <br/>
-                    <a href="#/"><p id="triangle-up"></p></a>
-                </section>
+        //]]>
+    </script>
 
-            </section>
-            <!--end of slide 1-->
+</head>
 
-			<!--slide 2-->
-			<section style="text-align: justify">
-				<h3>previous and current <span class="gray">collaborations</span></h3>
-				<p>
-                    I have done research with professors <a
-                        class="blue" href="http://users.soe.ucsc.edu/~alkis/">
-                    Neoklis (Alkis) Polyzotis</a> and <a
-                        class="blue" href="http://users.soe.ucsc.edu/~yiz/">
-                    Yi Zhang</a>, in the areas of automatic index tuning and cyber-bullying detection
-                    respectively.
-				</p>
-			</section>
-			
-			<!-- slide 3 -->
-			<section style="text-align: justify">
-				<section>
-					<h3>previous and current <span class="gray">projects</span></h3>
-					<p>
-						Try pressing <a class="blue" href="#/2/1">down</a> to see some of my
-                        projects. Beware the word-matching challenge!
-					</p>
-                    <a href="#/2/1"><p id="triangle-down"></p></a>
-				</section>
-				<section>
-                    <p>
-                    Aenean dignissim viverra dolor. Crasante. Suspendisse bibendum, odio
-                    elementum auctor pellentesque, <strong><a
-                            class="darkgray" href="https://github.com/hsanchez/circuitbreaker"
-                            title="a software pattern that helps you handle failure scenarios">circuitbreaker</a>
-                    </strong> elit consequat quam, molestie ullamcorper turpis nulla vel sem.
-                        Vestibulum <strong><a
-                                class="darkgray" href="#"
-                                title="A semi-supervised algorithm for detecting bullying in Twitter">tron</a>
-                    </strong> magna, sollicitudin et, tempor nec, ornare ac, ipsum. Donec porta
-                        sapien eu <strong><a class="darkgray" href="#"
-                                             title="A monitor on a periodic process">watchdog</a>
-                        </strong>. Duis leo neque, luctus <strong><a
-                            class="darkgray" href="https://github.com/hsanchez/demodetect"
-                            title="ISM 260 Course Project">demodetect</a></strong>, vestibulum sit
-                        amet,
-                        hendrerit nec, nisl. Nam purus felis, accumsan quis, posuere ac, congue ac,
-                        <strong><a class="darkgray" href="#"
-                                   title="A Web-based Terrain Generator">terrain</a>
-                        </strong>. Morbi eros. Proin in nisl. Mauris a quam.
-                    </p>
-                    <br/>
-                    <p class="gray">Try finding the projects in the above block of text!</p>
-                    <a href="#/2/2"><p id="triangle-down"></p></a>
-				</section>
+<body>
 
-				<section>
-                    <p>
-                        <strong>
-                            <a class="darkgray" href="http://code.google.com/p/filterq/"
-                               title="a lightweight API for dealing with iterable objects in Java">filterQ</a>
-                        </strong> nibh. Phasellus a metus <strong><a class="darkgray" href="#"
-                                                                     title="JDBC support for Google's datastore APIs">greatQ</a></strong>
-                        tellus cursus ornare. In in pede a purus dapibus convallis. Duis lacus sem,
-                        laoreet posuere, luctus <strong><a class="darkgray"
-                                                           href="https://github.com/hsanchez/jscheck"
-                                                           title="a limited static type checker for Javascript">jscheck</a></strong>,
-                        suscipit in,
-                        mi. Nullam eu sem dictum <strong><a class="darkgray"
-                                                            href="https://github.com/hsanchez/junit"
-                                                            title="conditional and performance testing support for JUnit">junit-Ext</a></strong>
-                        varius vehicula. Mauris vulputate.
-                        <strong><a class="darkgray" href="#"
-                                   title="Index Usage Model library">inum</a></strong> eu mi nec
-                        ipsum euismod ultrices. In sed elit
-                        faucibus tortor cursus sollicitudin. Nunc tellus nisl, bibendum in,
-                        consectetuer at, commodo sit amet,
-                        <strong> <a class="darkgray" href="#"
-                                    title="a lightweight API for semi-automated tuning">dbtune</a></strong>.
-                    </p>
-                    <br/>
-                    <p class="gray">Did you find any?</p>
-                    <a href="#/2"><p id="triangle-up"></p></a>
-				</section>
-			</section>
-            <!--end of slide 3-->
+<div id="container">
 
-            <!--slide 4-->
-            <section  style="text-align: justify">
-                <h3>selected <span class="gray">graduate</span> coursework</h3>
-                <ol>
-                    <li>Advanced Topics in Computer Graphics (<span class="gray">PCG</span>)</li>
-                    <li>Information Retrieval</li>
-                    <li>Machine Learning</li>
-                    <li>Data Mining</li>
-                    <li>Computational Models</li>
-                    <li>Design and Implementation of Database Systems</li>
-                    <li>Analysis of Algorithms</li>
-                    <li>Topics in Database
-                        Systems (<span class="gray">Cloud Computing</span>)</li>
-                    <li>Programming Languages</li>
-                    <li>Human Computer Interaction (<span class="gray">HCI</span>)</li>
-                    <li>Topics in Software Engineering (<span class="gray">Symbolic Execution
-                    </span>)</li>
-                </ol>
-            </section>
-            <!--end of slide 4-->
+    <header>
+        <div style="text-align: left ">
+            <p><a
+                    href="http://www.gravatar.com/avatar/edd40217c57a8b264212f6d1aec80231?s=354"
+                    class="fancybox no-title">
+            <img src="http://www.gravatar.com/avatar/edd40217c57a8b264212f6d1aec80231?s=100"
+                     alt=""/></a></p><br/>
 
-            <!--slide 5-->
-			<section style="text-align: justify">
-                <h3>phew! That was one <strong>HUGE</strong> list.</h3>
-                <p>
-                    Thanks for putting up with me so far. If you want more
-                    <span class="gray"> info.</span>, then feel free to review my
-                    <span class="gray">resume</span>:<br/><br/>
-                    <a class="blue" href="assets/huascarsanchez.resume.pdf">huascarsanchez dot
-                        resume dot pdf</a>
-                </p>
-			</section>
-			<!--end of slide 5-->
-
-            <!--slide 6-->
-			<section>
-                <br/>
-				<h1>THE END</h1>
-				<h3 class="inverted">BY Huascar A. Sanchez / cs.ucsc.edu/~hsanchez</h3>
-                <p style="text-align: justify">
-                    <blockquote>
-                        Real success is finding your lifework in the work that you love.
-                    </blockquote>
-                    David McCullough - 1933
-                </p>
-			</section>
-            <!--end of slide 6-->
-			
-		</div>
-		
-		<aside class="controls">
-			<a class="left" href="#">&#x25C4;</a>
-			<a class="right" href="#">&#x25BA;</a>
-			<a class="up" href="#">&#x25B2;</a>
-			<a class="down" href="#">&#x25BC;</a>
-		</aside>
-
-		<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
-		<div class="progress"><span></span></div>
-		
-		<script src="js/reveal.js"></script>
-		<script src="lib/highlight.js"></script>
-		<script>
-			// Parse the query string into a key/value object
-			var query = {};
-			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
-				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
-			} );
-
-			Reveal.initialize({
-				// Display controls in the bottom right corner
-				controls: true,
-
-				// Display a presentation progress bar
-				progress: true,
-
-				// Apply a 3D roll to links on hover
-				rollingLinks: true,
-
-				// UI style
-				theme: query.theme || 'default', // default/neon
-
-				// Transition style
-				transition: query.transition || 'default' // default/box/page/concave/linear(2d),
-			});
-
-			hljs.initHighlightingOnLoad();
-		</script>
-
-
-		<!-- Everything below this point is unrelated to the slideshow -->
-		<div id="footer">
-            <div class="nav_footer"> <!--margin-left: -160px-->
-                <li class="twitter"><a href="http://twitter.com/huascarsanchez" target="_blank">Twitter</a></li>
-                <li class="github"><a href="https://github.com/hsanchez" target="_blank">Github</a></li>
-                <li class="mail"><span style="font-weight: 100; font-size: 14px;">Mailing list</span></li>
-            </div>
-
-
-            <div class="modal_box" id="notify_me">
-                <p style="font-weight: 100; font-size: 14px; margin: 0 0 20px 0;" id="box_txt">I
-                    keep a mailing
-                    list for people interested in receiving updates
-                    about my work.
-                    If you are interested, then feel free to subscribe to my mailing list here. Your email won’t be used
-                    for anything else.</p>
-                <p id="form_txt" class="form_msg hidden"></p>
-
-                <form id="subscribe_form" action="http://groups.google.com/group/academic/boxsubscribe">
-                    <!--suppress HtmlFormInputWithoutLabel -->
-                    <input type="text" name="email" class="email" value="Type your email" id="input_email"
-                           onfocus="if (this.value=='Type your email') this.value = ''" onblur="if (this.value=='') this.value = 'Type your email'" />
-                    <input type="submit" value="Subscribe" class="btn"/>
-                </form>
-
-                <div class="arrow"></div>
-            </div>
+            <h4>Hi, There </h4><br/><br/>
 
         </div>
 
-        <!-- begin: google analytics code -->
-        <script type="text/javascript">
+    </header>
 
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', 'UA-5354996-4']);
-            _gaq.push(['_trackPageview']);
+    <p>
+    <span class="cap">I</span><span style="font-variant:small-caps; font-size: 2.2rem;">am</span> <strong>Huascar</strong>
+        (pronounced wäs-kär), a CS grad student working with <a
+            class="darkred" href="http://users.soe.ucsc.edu/~ejw/">Jim
+        Whitehead</a>, and part of <a class="darkred" href="#" title="Software Introspection Lab"
+            >SIL</a>.</p>
 
-            (function() {
-                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-            })();
+    <p style="margin-top: 6px;">
+        My core research area is software engineering, with a focus on
+        search-driven development, software evolution, and on the human aspects of
+        software development.
 
-        </script>
+    </p>
 
-        <!-- end: google analytics code -->
-	</body>
+    <p>
+        The goal of my research is to improve programmers' productivity. To
+        achieve this, I study the above areas with the aim of inventing technologies
+        that help people build applications opportunistically by iteratively finding,
+        combining, and reusing online source code.
+    </p>
+
+    <p>
+        I am also interested in the development and application of
+        computational methods to address serious social issues in today's world, such as
+        <a class="darkred"
+           href="http://dl.dropbox.com/u/11902217/huascarsanchez_and_shreyaskumar-twitterbullyingdection-fnl.pdf">bullying</a>
+        in social networks.
+    </p>
+
+    <h2>Previous and Current Collaborations</h2>
+
+    <p>
+        I have done research with <a class="darkred"
+                                                href="http://users.soe.ucsc.edu/~alkis/">
+        Neoklis Polyzotis</a> and <a class="darkred"
+                                              href="http://users.soe.ucsc.edu/~yiz/">
+        Yi Zhang</a>, in the areas of automatic index tuning and bullying detection in social
+        networks respectively.
+    </p>
+
+
+    <h2>Previous and Current projects</h2>
+
+    <ol>
+        <li><a class="darkred" href="#"
+                title="ADL project">Botprint</a>: A Mixed Initiative Robot Design
+            Tool</li>
+        <li>Twitter <a
+                class="darkred" href="#"
+                title="ISM 245 Course Project">Bullying</a> Analysis Tool</li>
+        <li>Twitter <a
+                class="darkred" href="https://github.com/hsanchez/demodetect"
+                title="ISM 260 Course Project">Demographics</a> Detection Tool</li>
+        <li>A Web-based <a class="darkred" href="#"
+                           title="A Web-based Terrain Generator">Terrain</a> Generator</li>
+        <li><a class="darkred" href="#"
+               title="a lightweight API for semi-automated tuning">dbtune & INUM</a>
+            libraries</li>
+        <li><a class="darkred"
+               href="https://github.com/hsanchez/circuitbreaker" title="a software pattern that
+               helps you handle failure scenarios">Circuitbreaker</a> library</li>
+        <li><a class="darkred" href="#"
+               title="A monitor on a periodic process">Watchdog</a> library</li>
+        <li><a class="darkred" href="http://code.google.com/p/filterq/"
+               title="a lightweight API for dealing with iterable objects in Java">filterQ</a>
+            library</li>
+        <li><a class="darkred"
+               href="https://github.com/hsanchez/jscheck"
+               title="a limited static type checker for Javascript">JScheck</a> type checker</li>
+        <li>Conditional and Performance Testing for <a
+                class="darkred"
+                href="#" title="conditional and performance testing
+                support for JUnit">JUnit</a></li>
+    </ol>
+
+    <h2>Selected Graduate Coursework</h2>
+
+    <ol>
+        <li>Adv. Topics in Computer Graphics (<strong>PContent
+            Generation</strong>)</li>
+        <li>Information Retrieval</li>
+        <li>Machine Learning</li>
+        <li>Data Mining</li>
+        <li>Computational Models</li>
+        <li>Design and Implementation of Database Systems</li>
+        <li>Analysis of Algorithms</li>
+        <li>Topics in Database
+            Systems (<strong>Cloud Computing</strong>)</li>
+        <li>Programming Languages</li>
+        <li>Human Computer Interaction (<strong>HCI</strong>)</li>
+        <li>Topics in Software Engineering (<strong>Symbolic Execution
+                    </strong>)</li>
+    </ol>
+
+    <h2>Phew! Those were two HUGE lists</h2>
+
+    <p>
+        Thanks for putting up with me so far. If you want more <strong>info</strong>, then
+        feel free to review my <strong>cv</strong>:<br/><br/>
+    </p>
+	 
+	 <p class="comment">
+		 <a href="assets/huascarsanchez.cv.pdf">huascarsanchez dot
+		             cv dot pdf</a>
+	 </p><br/>
+
+    <h2>Favorite quotes </h2>
+
+    <blockquote><span class="quote">Real success is finding your lifework in the
+    work that you love.</span><small
+    class="author"><a href="http://en.wikipedia.org/wiki/David_McCullough">David
+    McCullough</a></small>
+    </blockquote>
+
+    <blockquote><span class="quote">The best way to predict the future is to
+    invent it.</span><small
+    class="author"><a href="http://en.wikiquote.org/wiki/Alan_Kay">Alan Kay</a></small>
+    </blockquote>
+
+
+    <footer>
+
+        <div class="col">
+            <h3>Mailing List</h3>
+            <ul>
+                <li class="mail"><span style="font-weight: 100; font-size: 14px;"><img
+                        src="images/email.png" /></span></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <h3>Sister Sites</h3>
+
+            <ul>
+                <li><a class="darkred" href="http://bit.ly/RzcLw6">*new*</a></li>
+                <li><a class="darkred" href="http://bit.ly/T9MlPH">*old*<a/></a></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <h3>Follow Me</h3>
+
+            <ul>
+                <li><a href="https://twitter.com/intent/user?screen_name=huascarsanchez">Twitter</a></li>
+                <li><a href="https://plus.google.com/100717554099685883148">Google+</a></li>
+                <li><a href="http://www.facebook.com/huascar.sanchez">Facebook</a></li>
+                <li><a href="http://www.github.com/hsanchez">Github</a></li>
+            </ul>
+        </div>
+
+        <div class="modal_box" id="notify_me">
+            <p style="font-weight: 100; font-size: 14px; margin: 0 0 20px 0;" id="box_txt">I
+                keep a mailing
+                list for people interested in receiving updates
+                about my work.
+                If you are interested, then feel free to subscribe to my mailing list here. Your email won’t be used
+                for anything else.</p>
+            <p id="form_txt" class="form_msg hidden"></p>
+
+            <form id="subscribe_form" action="http://groups.google.com/group/academic/boxsubscribe">
+                <!--suppress HtmlFormInputWithoutLabel -->
+                <input type="text" name="email" class="email" value="Type your email" id="input_email"
+                       onfocus="if (this.value=='Type your email') this.value = ''" onblur="if (this.value=='') this.value = 'Type your email'" />
+                <input type="submit" value="Subscribe" class="btn"/>
+            </form>
+
+            <div class="arrow"></div>
+        </div>
+
+    </footer>
+</div>
+
+</body>
+
 </html>
