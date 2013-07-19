@@ -266,8 +266,8 @@ footer h4 {
 .modal_box {
     width: 320px;
     /*bottom: 250px !important;*/
-    top: 360px !important;
-    position: absolute !important;
+    top: 480px !important;
+    position: absolute;
     left: 195px;
     background: rgb(97%,97%,97%);
     border: 1px solid #373639;
