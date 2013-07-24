@@ -9,6 +9,7 @@ html, body {
     min-height: 100%;
 }
 
+
 body {
     font-family: Courier, monospace;
     font-size: 1.6rem;
@@ -28,6 +29,14 @@ h1, h2, h3, h4, h5, h6 {
     margin:1rem 0;
 }
 
+h1.title:before {
+    font-weight:normal;
+    content:"# ";
+}
+
+h1.title {
+    text-indent: -2rem;
+}
 
 small {
     font-size: 1.6rem;
@@ -283,4 +292,9 @@ footer h4 {
     position: absolute;
     bottom: -10px;
     left: 26px;
+}
+
+.gist .gist-file .gist-data {
+    max-height:20rem;
+    background:white !important;
 }
